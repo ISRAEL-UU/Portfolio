@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>KORBLAH PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-image: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg');
@@ -58,11 +59,8 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 1px 0;
+            padding: 10px 0;
             text-align: center;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
         }
         footer p {
             margin: 0;
@@ -75,14 +73,14 @@
         }
 
         footer a img {
-            width: 45px;
-            height: 45px;
+            width: 30px;
+            height: 30px;
         }
 
         footer a {
-            margin-right: 10px;
+            margin: 0 10px;
             color: white;
-            text-decoration: underline;
+            text-decoration: none;
             font-size: 20px; /* Adjust icon size */
         }
 
@@ -92,6 +90,27 @@
 
         footer p {
             margin-left: 10px; /* Adjust spacing between icons and email */
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                margin: 10px;
+            }
+            .container {
+                padding: 50px 10px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            footer .contact-info {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -109,46 +128,35 @@
         <a href="https://replit.com/@IsraelAmanor/SurprisedReliableButton#To_doListApp.java" class="cta-btn">View Portfolio</a>
     </div>
     <footer>
-        
         <div class="contact-info">
-            <a href="https://wa.me/0595653398" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
-            <a href="https://www.instagram.com/is_halbrok" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
-
-	<a href="https://twitter.com/YourTwitterHandle" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter"></a>
-         <a href="mailto:amanorisrael4@gmail.com"><img width="48" height="48" src="https://img.icons8.com/color-glass/48/new-post.png" alt="new-post"/>
+            <a href="https://wa.me/0595653398" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+            <a href="https://www.instagram.com/is_halbrok" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            <a href="https://twitter.com/YourTwitterHandle" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="Twitter"></a>
+            <a href="mailto:amanorisrael4@gmail.com"><img src="https://img.icons8.com/color-glass/48/new-post.png" alt="new-post"/>
         </div>
     </footer>
 
-	<script>
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    <script>
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
-    });
-</script>
+    </script>
 
-	<script>
-    // Toggle menu functionality
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navigation = document.querySelector('nav');
+    <script>
+        // Toggle menu functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navigation = document.querySelector('nav');
 
-    menuToggle.addEventListener('click', () => {
-        navigation.classList.toggle('active');
-    });
-</script>
-
-	<style>
-    /* Example hover effect */
-    .cta-btn:hover {
-        background-color: #2980b9;
-        color: #fff;
-    }
-</style>
-
+        menuToggle.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
