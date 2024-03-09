@@ -112,7 +112,11 @@
                 font-size: 28px;
             }
             footer .contact-info {
-                flex-direction: column;
+                flex-direction: row; /* Align icons horizontally */
+                justify-content: center; /* Center align the icons */
+            }
+            footer a {
+                margin: 0 10px; /* Adjust spacing between icons */
             }
         }
     </style>
@@ -126,7 +130,7 @@
     </nav>
     <div class="container">
         <h1>Welcome to my Portfolio</h1>
-        <p>I'm Israel Korblah, a software developer passionate about creating beautiful and functional softwares.</p>
+        <p>I'm Israel Korblah, a software developer passionate about creating beautiful and functional software.</p>
         <!-- Placeholder link for portfolio -->
         <a href="https://replit.com/@IsraelAmanor/SurprisedReliableButton#To_doListApp.java" class="cta-btn">View Portfolio</a>
     </div>
