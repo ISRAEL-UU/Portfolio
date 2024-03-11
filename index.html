@@ -6,18 +6,17 @@
     <style>
         body {
             background-image: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg');
-            /* Set background image size and position */
+          
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            /* Add additional styling for the body */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            font-family: Arial, sans-serif; /* Specify font-family */
-            color: white; /* Set text color to white for better contrast */
+            background-attachment: fixed;           
+            margin: 0; 
+            padding: 0;
+            font-family: Arial, sans-serif; 
+            color: white; 
         }
-        /* Style for the navigation menu */
+        
         nav {
             text-align: center;
             padding: 20px 0;
@@ -30,18 +29,18 @@
         nav a:hover {
             text-decoration: underline;
         }
-        /* Style for the main content */
+       
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 100px 20px;
             text-align: center;
         }
-        /* Style for the heading */
+       
         h1 {
             font-size: 36px;
         }
-        /* Style for the call to action button */
+       
         .cta-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -55,7 +54,7 @@
             background-color: #2980b9;
         }
 	
-        /* Style for the footer */
+        
         footer {
             background-color: #333;
             color: white;
@@ -84,7 +83,7 @@
             margin: 0 10px;
             color: white;
             text-decoration: none;
-            font-size: 20px; /* Adjust icon size */
+            font-size: 20px;
         }
 
         footer a:hover {
@@ -92,10 +91,10 @@
         }
 
         footer p {
-            margin-left: 10px; /* Adjust spacing between icons and email */
+            margin-left: 10px; 
         }
 
-        /* Media Queries for responsiveness */
+        
         @media screen and (max-width: 600px) {
             nav {
                 display: flex;
@@ -112,11 +111,11 @@
                 font-size: 28px;
             }
             footer .contact-info {
-                flex-direction: row; /* Align icons horizontally */
-                justify-content: center; /* Center align the icons */
+                flex-direction: row;
+                justify-content: center; 
             }
             footer a {
-                margin: 0 10px; /* Adjust spacing between icons */
+                margin: 0 10px;
             }
         }
     </style>
@@ -144,7 +143,7 @@
     </footer>
 
     <script>
-        // Smooth scrolling for all anchor links
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -157,7 +156,7 @@
     </script>
 
     <script>
-        // Toggle menu functionality
+       
         const menuToggle = document.querySelector('.menu-toggle');
         const navigation = document.querySelector('nav');
 

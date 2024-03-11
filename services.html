@@ -61,7 +61,7 @@
             color: #666;
         }
 
-        /* Form styles */
+       
         .form-container {
             display: none;
             position: fixed;
@@ -95,7 +95,7 @@
             text-decoration: none;
             cursor: pointer;
         }
-	/* Style for bottom social media links */
+	
         .bottom-social-media {
             
             position: fixed;
@@ -109,7 +109,7 @@
         .bottom-social-media a {
             color: white;
             text-decoration: none;
-            margin-left: 0 10px; /* Add some margin between links */
+            margin-left: 0 10px;
             font-size: 20px;
         }
     </style>
@@ -168,25 +168,24 @@
 </div>
 
 <script>
-    // Function to open the form with the specified title
+   
     function openForm(title) {
         document.getElementById('formTitle').textContent = title;
         document.getElementById('formContainer').style.display = 'block';
     }
 
-    // Function to close the form
+  
     function closeForm() {
         document.getElementById('formContainer').style.display = 'none';
-        // Clear form fields
+       
         document.getElementById('serviceForm').reset();
-        // Hide confirmation message
+       
         document.getElementById('confirmationMessage').style.display = 'none';
     }
 
-    // Function to handle form submission
+   
     function submitForm(event) {
-        event.preventDefault(); // Prevent form submission
-        // Display confirmation message
+        event.preventDefault(); 
         document.getElementById('confirmationMessage').style.display = 'block';
     }
 </script>
