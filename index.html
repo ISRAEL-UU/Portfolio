@@ -118,6 +118,13 @@
                 margin: 0 10px;
             }
         }
+	    .contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
     </style>
 </head>
 <body>
@@ -136,10 +143,16 @@
     <footer>
         <div class="contact-info">
             <a href="https://wa.me/0595653398" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+
+
             <a href="https://www.instagram.com/is_halbrok" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/></a>
             <a href="https://twitter.com/@_halbrok" target="_blank"><img width="40" height="40" src="https://img.icons8.com/windows/32/twitterx.png" alt="twitterx"/></a>
             <a href="mailto:amanorisrael4@gmail.com"><img width="40" height="40" src="https://img.icons8.com/fluency/48/mail--v1.png" alt="mail--v1"/></a>
+
+	<button id="openFormBtn" class="cta-btn contact-btn">Contact Me</button>
         </div>
+	
+
     </footer>
 
     <script>
@@ -154,6 +167,8 @@
             });
         });
     </script>
+	
+
 
     <script>
        
@@ -163,6 +178,14 @@
         menuToggle.addEventListener('click', () => {
             navigation.classList.toggle('active');
         });
+	
+
     </script>
+	<script>document.getElementById('openFormBtn').addEventListener('click', function() {
+    openForm('Contact Me');
+});
+</script>
+	
+
 </body>
 </html>
