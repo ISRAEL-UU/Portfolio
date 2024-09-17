@@ -75,7 +75,7 @@
         }
 
         .form-content {
-            background-color: #e86591;
+            background-color: #ebeef1;
             margin: 10% auto;
             padding: 20px;
             border: 1px solid #888;
@@ -141,21 +141,24 @@
         <a href="https://www.instagram.com/is_halbrok" target="_blank"><img width="30" height="30" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram-new--v1"/></a>
         <a href="https://twitter.com/@_halbrok" target="_blank"><img width="30" height="30" src="https://img.icons8.com/windows/32/twitterx.png" alt="twitterx"/></a>
         <a href="mailto:amanorisrael4@gmail.com"><img width="30" height="30" src="https://img.icons8.com/fluency/48/mail--v1.png" alt="mail--v1"/></a>
-    </div>
-
-    <!-- Form container -->
+    </div> <!-- Form container -->
     <div id="formContainer" class="form-container">
         <!-- Form content -->
         <div class="form-content">
             <span class="close" onclick="closeForm()">&times;</span>
             <h2 id="formTitle"></h2>
             <form id="serviceForm" method="post" action="#" onsubmit="submitForm(event)">
-                <label for="name">Name:</label><br>
-<input type="text" id="name" name="name" required><br>
-<label for="contact">Contact (Email or Telephone):</label><br>
-<input type="text" id="contact" name="contact" required><br>
-<label for="description">Description:</label><br>
-<textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+               
+<input type="text" class-id="input" placeholder="Enter your name" required>
+<I class="fas fa-user"></i>
+
+<input type="text" class-id="input" placeholder="Enter your e-mail or Phone number" required>
+<I class="fas fa-user"></i>
+
+<input type="text" class-id="input" placeholder="DECRIPTION OF WHAT YOU WANT" required>
+<I class="fas fa-user"></i>
+ <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+
 <label for="sendMethod">Send Via:</label><br>
 <select id="sendMethod" name="sendMethod" required>
 <option value="email">Email</option>
